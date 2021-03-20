@@ -1,4 +1,4 @@
-19119312007696646
+19122543564919015
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76460,6 +76460,20 @@ Switch
 0
 4
 4
+SamacSys_Parts
+QFN28-4x4mm-0_5mmP-thermalpad
+
+
+0
+33
+29
+SamacSys_Parts
+QFN50P600X600X60-41N-D
+40-pin QFN
+Integrated Circuit
+0
+41
+41
 SamacSys_Parts
 QFP80P900X900X120-32N
 32A
