@@ -1,4 +1,4 @@
-19122543564919015
+19125776094527235
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76300,6 +76300,13 @@ Undefined or Miscellaneous
 2
 2
 SamacSys_Parts
+0202-solder-jumper
+
+
+0
+4
+2
+SamacSys_Parts
 790
 790-3
 Integrated Circuit
@@ -76481,6 +76488,13 @@ Integrated Circuit
 0
 32
 32
+SamacSys_Parts
+RC-1206-0805-hybrid
+
+
+0
+2
+2
 SamacSys_Parts
 RESC1608X55N
 ERJ-UP3F2200V
