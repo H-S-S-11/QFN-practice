@@ -410,9 +410,9 @@ Text Notes 5550 5400 2    50   ~ 0
 Short if STM\n
 Text Notes 7000 3650 0    50   ~ 0
 Short if ATtiny
-Text Label 10300 2550 2    50   ~ 0
+Text Label 6150 4550 2    50   ~ 0
 ST_PA1
-Text Label 8700 850  0    50   ~ 0
+Text Label 10300 2550 2    50   ~ 0
 ST_PA2
 Text Label 8600 2400 0    50   ~ 0
 ST_PA3
@@ -613,5 +613,22 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6400 4350 50 
 F 3 "~" H 6400 4350 50  0001 C CNN
 	1    6400 4350
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4550 6200 4550
+Wire Wire Line
+	5850 4450 5850 4700
+Wire Wire Line
+	5850 4450 6200 4450
+$Comp
+L power:GND #PWR?
+U 1 1 606DBAFB
+P 5850 4700
+F 0 "#PWR?" H 5850 4450 50  0001 C CNN
+F 1 "GND" H 5855 4527 50  0000 C CNN
+F 2 "" H 5850 4700 50  0001 C CNN
+F 3 "" H 5850 4700 50  0001 C CNN
+	1    5850 4700
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

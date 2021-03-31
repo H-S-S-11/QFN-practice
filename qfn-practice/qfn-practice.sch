@@ -410,13 +410,13 @@ Text Notes 5550 5400 2    50   ~ 0
 Short if STM\n
 Text Notes 7000 3650 0    50   ~ 0
 Short if ATtiny
-Text Label 10300 2550 2    50   ~ 0
-ST_PA1
 Text Label 6150 4550 2    50   ~ 0
+ST_PA1
+Text Label 10300 2550 2    50   ~ 0
 ST_PA2
-Text Label 8600 2400 0    50   ~ 0
-ST_PA3
 Text Label 8600 2250 0    50   ~ 0
+ST_PA3
+Text Label 8600 2400 0    50   ~ 0
 ST_PA4
 Text Label 8450 2250 2    50   ~ 0
 P8
@@ -621,10 +621,10 @@ Wire Wire Line
 Wire Wire Line
 	5850 4450 6200 4450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0109
 U 1 1 606DBAFB
 P 5850 4700
-F 0 "#PWR?" H 5850 4450 50  0001 C CNN
+F 0 "#PWR0109" H 5850 4450 50  0001 C CNN
 F 1 "GND" H 5855 4527 50  0000 C CNN
 F 2 "" H 5850 4700 50  0001 C CNN
 F 3 "" H 5850 4700 50  0001 C CNN
