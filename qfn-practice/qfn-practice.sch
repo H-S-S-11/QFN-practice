@@ -164,14 +164,8 @@ Text Label 4250 3050 2    50   ~ 0
 ~ST_RST
 Text Label 4250 3250 2    50   ~ 0
 ST_BOOT0
-Wire Wire Line
-	4250 3250 4450 3250
-Wire Wire Line
-	5450 4250 5650 4250
-Wire Wire Line
-	5450 4350 5650 4350
 Text Label 5650 4250 0    50   ~ 0
-ST_USART-TX_SWCLK
+ST_USART-TX
 Wire Wire Line
 	5450 4150 5650 4150
 Text Label 5650 4150 0    50   ~ 0
@@ -182,20 +176,6 @@ Wire Wire Line
 	4450 3750 4250 3750
 Wire Wire Line
 	4250 3850 4450 3850
-Wire Wire Line
-	4450 3950 4250 3950
-Wire Wire Line
-	4250 4050 4450 4050
-Wire Wire Line
-	4450 4150 4250 4150
-Wire Wire Line
-	4250 4250 4450 4250
-Wire Wire Line
-	4450 4350 4250 4350
-Wire Wire Line
-	5450 3650 5650 3650
-Wire Wire Line
-	5650 3750 5450 3750
 Wire Wire Line
 	5450 3850 5650 3850
 Wire Wire Line
@@ -307,8 +287,8 @@ $Comp
 L Device:Jumper_NC_Small JP5
 U 1 1 605D5F97
 P 6550 3550
-F 0 "JP5" H 6550 3450 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 6700 3650 50  0000 C CNN
+F 0 "JP5" H 6550 3650 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6950 3650 50  0000 C CNN
 F 2 "SamacSys_Parts:0202-solder-jumper" H 6550 3550 50  0001 C CNN
 F 3 "~" H 6550 3550 50  0001 C CNN
 	1    6550 3550
@@ -416,8 +396,6 @@ Text Label 8450 2100 2    50   ~ 0
 P7
 Text Label 10300 2400 2    50   ~ 0
 ST_PB0
-Text Label 10300 2550 2    50   ~ 0
-ST_PA7
 Wire Wire Line
 	10300 2400 10450 2400
 Wire Wire Line
@@ -432,13 +410,11 @@ Text Notes 5550 5400 2    50   ~ 0
 Short if STM\n
 Text Notes 7000 3650 0    50   ~ 0
 Short if ATtiny
-Text Label 8600 2400 0    50   ~ 0
-ST_PA6
-Text Label 8600 1200 0    50   ~ 0
+Text Label 10300 2550 2    50   ~ 0
 ST_PA1
-Text Label 8600 1350 0    50   ~ 0
+Text Label 6150 4550 2    50   ~ 0
 ST_PA2
-Text Label 8600 1500 0    50   ~ 0
+Text Label 8600 2400 0    50   ~ 0
 ST_PA3
 Text Label 8600 2250 0    50   ~ 0
 ST_PA4
@@ -539,58 +515,120 @@ Wire Wire Line
 Wire Wire Line
 	4650 2050 4950 2050
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J5
 U 1 1 6069E048
-P 3300 2850
-F 0 "J?" H 3218 3067 50  0000 C CNN
-F 1 "Conn_01x02" H 3218 2976 50  0000 C CNN
-F 2 "" H 3300 2850 50  0001 C CNN
-F 3 "~" H 3300 2850 50  0001 C CNN
-	1    3300 2850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 6069EE65
-P 2750 3200
-F 0 "J?" H 2668 3517 50  0000 C CNN
-F 1 "Conn_01x03" H 2668 3426 50  0000 C CNN
-F 2 "" H 2750 3200 50  0001 C CNN
-F 3 "~" H 2750 3200 50  0001 C CNN
-	1    2750 3200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 606A04C0
-P 6200 4600
-F 0 "J?" H 6300 4500 50  0000 L CNN
-F 1 "Conn_01x03" H 6200 4350 50  0000 L CNN
-F 2 "" H 6200 4600 50  0001 C CNN
-F 3 "~" H 6200 4600 50  0001 C CNN
-	1    6200 4600
+P 6150 3650
+F 0 "J5" H 6300 3650 50  0000 C CNN
+F 1 "Conn_01x02" H 6450 3550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 3650 50  0001 C CNN
+F 3 "~" H 6150 3650 50  0001 C CNN
+	1    6150 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 606A0FF9
-P 3500 4350
-F 0 "J?" H 3500 4150 50  0000 C CNN
-F 1 "Conn_01x03" H 3550 4050 50  0000 C CNN
-F 2 "" H 3500 4350 50  0001 C CNN
-F 3 "~" H 3500 4350 50  0001 C CNN
-	1    3500 4350
+L Connector_Generic:Conn_01x03 J7
+U 1 1 606A04C0
+P 2950 4050
+F 0 "J7" H 3050 3950 50  0000 L CNN
+F 1 "Conn_01x03" H 2800 3850 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2950 4050 50  0001 C CNN
+F 3 "~" H 2950 4050 50  0001 C CNN
+	1    2950 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4150 4450 4150
+Wire Wire Line
+	3150 4050 4450 4050
+Wire Wire Line
+	3150 3950 4450 3950
+$Comp
+L power:GND #PWR0113
+U 1 1 6065F19F
+P 3200 3450
+F 0 "#PWR0113" H 3200 3200 50  0001 C CNN
+F 1 "GND" H 3205 3277 50  0000 C CNN
+F 2 "" H 3200 3450 50  0001 C CNN
+F 3 "" H 3200 3450 50  0001 C CNN
+	1    3200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 6066006D
+P 3200 3050
+F 0 "#PWR0114" H 3200 2900 50  0001 C CNN
+F 1 "+3.3V" H 3215 3223 50  0000 C CNN
+F 2 "" H 3200 3050 50  0001 C CNN
+F 3 "" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3250 4450 3250
+Wire Wire Line
+	3050 3350 3200 3350
+Wire Wire Line
+	3200 3350 3200 3450
+Wire Wire Line
+	3050 3150 3200 3150
+Wire Wire Line
+	3200 3150 3200 3050
+Wire Wire Line
+	5450 4250 6200 4250
+Wire Wire Line
+	5450 4350 6200 4350
+Wire Wire Line
+	5450 3650 5950 3650
+Wire Wire Line
+	5450 3750 5950 3750
+Text Label 8600 1500 0    50   ~ 0
+~ST_RST
+Wire Wire Line
+	4450 4250 4250 4250
+Wire Wire Line
+	4250 4350 4450 4350
+Text Label 8600 1200 0    50   ~ 0
+ST_PB6_SCL
+Text Label 8600 1350 0    50   ~ 0
+ST_PB7_SDA
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 6069EE65
+P 2850 3250
+F 0 "J3" H 3100 3250 50  0000 C CNN
+F 1 "Conn_01x03" H 3150 3150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2850 3250 50  0001 C CNN
+F 3 "~" H 2850 3250 50  0001 C CNN
+	1    2850 3250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 606A1D93
-P 3050 4000
-F 0 "J?" H 2968 4317 50  0000 C CNN
-F 1 "Conn_01x04" H 2968 4226 50  0000 C CNN
-F 2 "" H 3050 4000 50  0001 C CNN
-F 3 "~" H 3050 4000 50  0001 C CNN
-	1    3050 4000
+L Connector_Generic:Conn_01x04 J4
+U 1 1 606C850D
+P 6400 4350
+F 0 "J4" H 6480 4342 50  0000 L CNN
+F 1 "Conn_01x04" H 6200 4050 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6400 4350 50  0001 C CNN
+F 3 "~" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4550 6200 4550
+Wire Wire Line
+	5850 4450 5850 4700
+Wire Wire Line
+	5850 4450 6200 4450
+$Comp
+L power:GND #PWR?
+U 1 1 606DBAFB
+P 5850 4700
+F 0 "#PWR?" H 5850 4450 50  0001 C CNN
+F 1 "GND" H 5855 4527 50  0000 C CNN
+F 2 "" H 5850 4700 50  0001 C CNN
+F 3 "" H 5850 4700 50  0001 C CNN
+	1    5850 4700
 	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
