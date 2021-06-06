@@ -139,11 +139,40 @@ X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_STM32F031G4Ux-thermal-pad
+# power_+3.3V
 #
-DEF SamacSys_Parts_STM32F031G4Ux-thermal-pad U 0 40 Y Y 1 F N
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# qfn-practice-rescue_STM32F031G4Ux-thermal-pad-SamacSys_Parts
+#
+DEF qfn-practice-rescue_STM32F031G4Ux-thermal-pad-SamacSys_Parts U 0 40 Y Y 1 F N
 F0 "U" -350 800 50 H V C CNN
-F1 "SamacSys_Parts_STM32F031G4Ux-thermal-pad" 750 800 50 H V C CNN
+F1 "qfn-practice-rescue_STM32F031G4Ux-thermal-pad-SamacSys_Parts" 750 800 50 H V C CNN
 F2 "" 0 1350 50 H I C CNN
 F3 "" 0 1350 50 H I C CNN
 DRAW
@@ -177,35 +206,6 @@ X PA0 6 500 650 100 L 50 50 1 1 B
 X PA1 7 500 550 100 L 50 50 1 1 B
 X PA2 8 500 450 100 L 50 50 1 1 B
 X PA3 9 500 350 100 L 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

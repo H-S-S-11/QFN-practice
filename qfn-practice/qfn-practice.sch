@@ -120,7 +120,7 @@ P8
 Text Label 8650 3800 0    50   ~ 0
 P9
 $Comp
-L SamacSys_Parts:STM32F031G4Ux-thermal-pad U2
+L qfn-practice-rescue:STM32F031G4Ux-thermal-pad-SamacSys_Parts U2
 U 1 1 60570B22
 P 4950 3700
 F 0 "U2" H 4600 4500 50  0000 C CNN
